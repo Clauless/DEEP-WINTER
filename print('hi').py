@@ -15,6 +15,7 @@ class AwesomeDice:
             k+=1
         
         self.dice = list1
+        print(list1)
         
 
     def roll_dice_once(self):
