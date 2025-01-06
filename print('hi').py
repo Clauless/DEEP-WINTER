@@ -4,18 +4,15 @@ import random
 class AwesomeDice:
     def __init__(self,n):
         self.n = n
-
         list1=[]
         k=1
         for i in range(1,n+1):
-            if len(list1)<n:
-                for j in range(1,k+1):
-                    if len(list1)<n:
-                        list1.append(k)
+            for j in range(1,k+1):
+                if len(list1)<n:
+                    list1.append(k)
             k+=1
         
         self.dice = list1
-        print(list1)
         
 
     def roll_dice_once(self):
